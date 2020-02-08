@@ -1,12 +1,11 @@
 def merge_sort(list)
-  sorted = []
-
   return list if list.length == 1 # base case
   
   mid = list.length/2
   left = merge_sort(list[0...mid])
   right = merge_sort(list[mid..-1])
     
+  sorted = []
   i = 0 # left loop index
   j = 0 # right loop index
   loop do
